@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+        .redcontainer{
+            width: 25%;
+            float: left;
+            background: red;
+            height: 200px;
+        }
+        .bluecontainer{
+            width: 25%;
+            float: left;
+            background: blue;
+            height: 200px;
+        }
+        .orangecontainer{
+            width: 25%;
+            float: left;
+            background: orange;
+            height: 200px;
+        }
+        .yellowcontainer{
+            width: 25%;
+            float: left;
+            background: yellow;
+            height: 200px;
+        }
+        .blackcontainer{
+            width: 25%;
+            float: left;
+            background: black;
+            height: 200px;
+        }
+        @media screen and (max-width: 1580px) and (min-width: 1380px){
+            .blackcontainer, .redcontainer, .yellowcontainer, .orangecontainer, .bluecontainer{
+                width: 25%;
+            }
+        }
+        
+        @media screen and (max-width: 500px) and (min-width: 0px){
+            .blackcontainer, .redcontainer, .yellowcontainer, .orangecontainer, .bluecontainer{
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) and (min-width: 501px){
+            .blackcontainer, .redcontainer, .yellowcontainer, .orangecontainer, .bluecontainer{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="redcontainer"></div>
+    <div class="bluecontainer"></div>
+    <div class="orangecontainer"></div>
+    <div class="yellowcontainer"></div>
+    <div class="blackcontainer"></div>
+    <div class="redcontainer"></div>
+    <div class="bluecontainer"></div>
+    <div class="orangecontainer"></div>
+    <div class="yellowcontainer"></div>
+    <div class="blackcontainer"></div>
+    <div class="redcontainer"></div>
+    <div class="bluecontainer"></div>
+    <div class="orangecontainer"></div>
+    <div class="yellowcontainer"></div>
+    <div class="blackcontainer"></div>
+    <div class="redcontainer"></div>
+    <div class="bluecontainer"></div>
+    <div class="orangecontainer"></div>
+    <div class="yellowcontainer"></div>
+    <div class="blackcontainer"></div>
+    <div class="redcontainer"></div>
+    <div class="bluecontainer"></div>
+    <div class="orangecontainer"></div>
+    <div class="yellowcontainer"></div>
+    <div class="blackcontainer"></div>
+</body>
+</html>

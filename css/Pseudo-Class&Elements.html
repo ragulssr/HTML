@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:focus {
+        color: brown;
+    }
+
+a:link{
+  color: red;
+}
+    
+/* mouse over link */
+a:hover{
+  color: yellow;
+}
+
+/* selected link */
+a:active{
+  color: blue;
+}
+    
+q:lang(no) {
+  quotes: "~" "~";
+}
+
+a:visited {
+        color: blueviolet;
+    }
+
+.f1 p::before{
+        content: url(/html/image.jpg)
+    }
+    
+.f2 p::after{
+        content: url(/html/image.jpg)
+    }
+
+.f3 ::marker {
+        
+    color: red;
+    }
+    
+.f4 p::selection{
+     color: red;
+    background: yellow;
+    }
+</style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+
+<h2>Styling a link depending on state</h2>
+
+<p><b><a href="Basicproject.html" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> water, a substance composed of the <q lang="no">chemical elements hydrogen and oxygen and existing in gaseous, liquid, and solid states.</q></p>
+<p><b>Note:</b> It is one of the most plentiful and essential of compounds. A tasteless and odourless liquid at room temperature, it has the important ability to dissolve many other substances.</p>
+    <hr>
+    <h1>Pseudo Elements</h1>
+<div class="f1">
+       <p> This line will be preceded by a image.</p>
+    </div>
+    <hr>
+    <div class="f2">
+      <p> This line will be preceded by a image.</p>
+    </div>
+    <hr>
+    <h4>Marker</h4>
+    <div class="f3">
+    <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol> 
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+        <hr>
+        <h4>Selection</h4>
+    <div class="f4">
+        <p>It is one of the most plentiful and essential of compounds. A tasteless and odourless liquid at room temperature, it has the important ability to dissolve many other substances</p>
+        </div>
+    </div>
+</body>
+</html>
