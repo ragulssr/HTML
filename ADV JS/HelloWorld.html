@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HelloWorld Program</title>
+</head>
+<body>
+    <button onclick="btn()">Press</button>
+</body>
+<script>
+    var city="Erode";
+    console.log(city,typeof(city));
+    city=12;
+    console.log(city, typeof(city));
+    city=true;
+    console.log(city,typeof(city));
+
+    var arr1=["erode",12,13,"Chennai",true,"Coimbatore"];
+    console.log(arr1);
+    console.log(arr1[4]);
+
+    // Object Method
+    var obj={
+        "Place":"Coimbatore","age":24,"Name":"Ragul"
+    }
+    console.log(obj);
+    console.log(obj.age);
+
+    // JSON Method
+    var json=[
+        {"Place":"Coimbatore","age":24,"Name":"Ragul"},
+        {"Place":"Erode","age":25,"Name":"Ahash"},
+        {"Place":"Chennai","age":26,"Name":"Aswinth"}
+    ]
+    console.log(json);
+    console.log(json[1]);
+    console.log(json[1].Name);
+
+    // IF Condition 
+    if(city==false){
+        console.log("City is false");
+    }
+    else{
+        console.log("City is True");
+    }
+
+    // For Loop 
+    var i;
+    for(i=0;i<10;i++){
+        console.log("HI");
+    }
+
+    // Function Method 
+    function f1(a,b){
+        console.log("sum of "+ (a+b));
+    }
+
+    f1(2,8);
+
+    function btn(){
+        console.log("Clicked")
+    }
+</script>
+</html>

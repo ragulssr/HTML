@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>DOM in Javascript</title>
+    </head>
+<body>
+    <h1 id="h1element"></h1>
+    <hr>
+    <p id="ptag">Hi
+        
+        <span id="sp">
+
+        </span></p>
+
+
+    <button onclick="add()">Add</button>
+    <button onclick="replace()">Replace</button>
+    <button onclick="remove()">Remove</button>
+    </body>
+<script>
+    function add(){
+        document.getElementById("ptag").innerHTML=" Guys";
+    }
+    
+    function replace(){
+        document.getElementById("ptag").innerHTML="Hello";
+    }
+    
+    function remove(){
+        document.getElementById("ptag").innerHTML="";
+    }
+    
+    document.getElementById("h1element").innerHTML="DOM in JavaScript";
+    </script>
+</html>

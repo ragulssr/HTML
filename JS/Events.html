@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Events in javascript</title>
+    </head>
+<body onload="btn1()">
+    <button onclick="btn()">click</button>
+    <button ondblclick="btn3()">DBClick</button>
+    <input onchange="btn4()">
+    <p onmouseover="btn2()" onmouseout="btn5()">Hi</p>
+    </body>
+<script>
+//    onclick
+    function btn(){
+        console.log("Button clicked");
+    }
+//    onload
+    function btn1(){
+        console.log("Page Refreashed");
+    }
+//    onmouseover
+    function btn2(){
+        console.log("Don't touch me");
+    }
+//    ondblclick
+    function btn3(){
+        console.log("Double Clicked");
+    }
+//    onchange
+    function btn4(){
+        console.log("Value filled or Changed")
+    }
+//    onmouseout
+    function btn5(){
+        console.log("Don't leave me")
+    }
+    </script>
+</html>

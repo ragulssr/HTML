@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    var a=12,b=12;
+    const c=12;
+    console.log(a,b,c);
+    a=13,b=13;
+    // c=13; c is not modify
+    console.log(a,b,c);
+
+    // Scoping of variables
+
+    if(true){
+        var d=12;
+        let e=12;
+        const f=12;
+        console.log("if block",d,e,f);
+    }
+    // console.log("outside if block",d,e,f); e f not displayed
+    console.log("outside if block",d);
+
+    var i=0;
+    while(i==0){
+        var d=12;
+        let e=12;
+        const f=12;
+        console.log("while block",d,e,f);
+        i++;
+    }
+    console.log("outside while block",d);
+
+    function cc(){
+        var g=12;
+        let h=12;
+        const j=12;
+        console.log("inside function",g,h,j);
+    }
+    // g,h,j is not displayed
+    cc();
+    console.log("outside function",g,h,j);
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+    <title>JSFuntion</title>
+    </head>
+<body>
+    
+    </body>
+<script>
+    
+//    Function Call Method
+    
+    var person = {
+        fullName: function(city,country){
+            return this.firstName + " " +this.lastName + "," + city + "," + country;
+        }
+    }
+    var person1 = {
+        firstName:'Ragul',
+        lastName:'S'
+    }
+    var person2 = {
+        firstName:'Ahash',
+        lastName:'Kanna'
+    }
+    
+    console.log(person.fullName.call(person1,"Erode","India"));
+    console.log(person.fullName.call(person2,"Erode","India"));
+    
+//    Function Apply Method
+    
+     console.log(person.fullName.apply(person1,['Erode','India'])) ;
+    </script>
+</html>

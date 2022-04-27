@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>DOM in JavaScript</title>
+    </head>
+<body>
+    <h2 id="h2ee">Dynamic Styles</h2>
+    <button onclick="style1()">Style1</button>
+    <button onclick="style2()">Style2</button>
+    <button onclick="style3()">Style3</button>
+    </body>
+<script>
+    function style1(){
+        document.getElementById("h2ee").style.cssText="color:Red;background:Yellow;text-align:center"
+        }
+    
+    function style2(){
+        document.getElementById("h2ee").style.cssText="color:Black;background-color:blue;text-align:left"
+    }
+    
+    function style3(){
+        document.getElementById("h2ee").style.cssText="color:white;background-color:black;text-align:right"
+    }
+    </script>
+</html>

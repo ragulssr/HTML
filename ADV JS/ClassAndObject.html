@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class p{
+    // <!-- Variables and Function  -->
+    // <!-- Variable -> Properties -->
+    // <!-- Function -> Methods  -->
+
+    // <!-- Initialization the properties  -->
+    constructor(a,b){
+    this.a=a;
+    this.b=b;
+    }
+age(){
+    var date =new Date();
+    return date.getFullYear() - this.a;
+}
+
+}
+
+// <!-- Syntax for creating object  -->
+var aa = new p(2012,"HelloWorld");
+
+var aaa = new p(2020,"Hello");
+
+console.log("The P is " + aa.age() + " Years old" );
+</script>
+</html>

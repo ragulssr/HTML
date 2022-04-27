@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>DOM in JavaScript</title>
+    <style>
+    </style>
+    </head>
+<body id="BT">
+    <h1>WELCOME</h1>
+    <hr>
+    <div>
+    <p id="PT">a</p>
+    <button onclick="create()">Create</button>
+    <button onclick="remove()">Remove</button>
+    </div>
+    <h1></h1>
+    <div>
+    <input id="IN" type="text" placeholder="UserName">
+    <button onclick="submit()">Submit</button>
+    </div>
+    </body>
+<script>
+    
+//    Create Tag in JS
+    function create(){
+    var tag = document.createElement("p");
+    var content = document.createTextNode("Content of Paragraph");
+    tag.appendChild(content);
+    
+    var ele= document.getElementById("BT");
+    ele.appendChild(tag);
+    }
+    
+//    Delete Tag in JS
+    function remove(){
+    var re = document.getElementById("PT");
+     re.remove();   
+    }
+    
+    function submit(){
+        var input = document.getElementById("IN").value;
+        console.log(input);
+    }
+    </script>
+</html>
